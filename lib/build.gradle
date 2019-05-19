@@ -1,0 +1,25 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+group = 'org.duangsuse'
+version = '1.0'
+
+android {
+    compileSdkVersion = 28
+
+    compileOptions {
+        targetCompatibility = "1.8"
+        sourceCompatibility = "1.8"
+    }
+}
+
+
+sourceSets {
+    main {
+        //kotlin.srcDirs += 'src/main/kotlin'
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+}
